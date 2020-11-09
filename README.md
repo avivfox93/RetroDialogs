@@ -21,16 +21,21 @@ dependencies {
 ## Example:
 Creating a Windows retro like Info Dialog:
 ```java
+WindowsDialog windowsDialog = new WindowsDialog(this);
+
 windowsDialog.enableYesButton(()->{
     Log.e("Retro","Yes selected");
 });
+
 windowsDialog.enableNoButton(()->{
     Log.e("Retro","No selected");
 });
+
 windowsDialog.enableCancelButton(()->{
     Log.e("Retro","Cancel selected");
     windowsDialog.dismiss();
 });
+
 windowsDialog.enableExitButton(()->{
     Log.e("Retro","Exit selected");
     windowsDialog.dismiss();
