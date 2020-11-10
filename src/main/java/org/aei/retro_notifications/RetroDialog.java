@@ -5,6 +5,7 @@ import android.content.Context;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
@@ -17,6 +18,8 @@ public abstract class RetroDialog extends Dialog {
 
     protected ImageView dialogIcon;
 
+    protected TextView bodyText;
+
     public enum DialogType{
         INFO,WARNING,QUESTION,ERROR
     }
@@ -25,6 +28,7 @@ public abstract class RetroDialog extends Dialog {
         super(context);
         this.view = getLayoutInflater().inflate(R.layout.layout_dialog,null);
         setContentView(view);
+        bodyText = view.findViewById(R.id.dialog_body_text);
         yes = view.findViewById(R.id.dialog_yes_button);
         no = view.findViewById(R.id.dialog_no_button);
         cancel = view.findViewById(R.id.dialog_cancel_button);
@@ -70,6 +74,14 @@ public abstract class RetroDialog extends Dialog {
      */
     public void enableExitButton(DialogCallback callback){
         exitImage.setOnClickListener((e)->callback.onClicked());
+    }
+
+    /**
+     * Set the body text of the Dialog
+     * @param text text to show in the body of the Dialog
+     */
+    public void setBodyText(String text){
+        bodyText.setText(text);
     }
 
     /**

@@ -41,6 +41,8 @@ windowsDialog.enableExitButton(()->{
     windowsDialog.dismiss();
 });
 
+windowsDialog.setBodyText("This is the body :)");
+
 windowsDialog.setDialogType(RetroDialog.DialogType.INFO);
 windowsDialog.show();
 ```
