@@ -54,4 +54,4 @@ In the future I need to add the following:
 
 Feel free to add suggestions/issues through the issues tab.
 
-## License:
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
