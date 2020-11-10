@@ -44,3 +44,14 @@ windowsDialog.enableExitButton(()->{
 windowsDialog.setDialogType(RetroDialog.DialogType.INFO);
 windowsDialog.show();
 ```
+
+## TODO:
+For now, there is only Windows 98 style dialog available.
+In the future I need to add the following:
+1) Windows XP
+2) Macintosh
+3) Retro gaming dialogs
+
+Feel free to add suggestions/issues through the issues tab.
+
+## License:
