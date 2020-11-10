@@ -43,7 +43,7 @@ public class TextAnimator {
             public void run() {
                 activity.runOnUiThread(()->{
                     textView.setText(String.format(Locale.ENGLISH,"%s%s", text.substring(0, ++index),
-                            (index == text.length()) ? "" : "_"));
+                            (index == text.length() || !cursor) ? "" : "_"));
                     if(index >= text.length()) {
                         index = 0;
                         timer.cancel();
