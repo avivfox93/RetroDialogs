@@ -69,8 +69,8 @@ retroGameDialog.startAnimation(this,150,true);
 ## TODO:
 For now, there is only Windows 98 style dialog available.
 In the future I need to add the following:
-- [] Windows XP
-- [] Macintosh
+- [ ] Windows XP
+- [ ] Macintosh
 - [x] Retro gaming dialogs
 
 Feel free to add suggestions/issues through the issues tab.
