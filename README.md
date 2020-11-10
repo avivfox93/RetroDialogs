@@ -19,7 +19,8 @@ dependencies {
 ```
 
 ## Example:
-Creating a Windows retro like Info Dialog:
+### Creating a Windows retro like Info Dialog:
+![](examples/WindowsDialog.gif)
 ```java
 WindowsDialog windowsDialog = new WindowsDialog(this);
 
@@ -45,6 +46,24 @@ windowsDialog.setBodyText("This is the body :)");
 
 windowsDialog.setDialogType(RetroDialog.DialogType.INFO);
 windowsDialog.show();
+```
+### Creating a Retro game Dialog:
+![](examples/RetroGameDialog.gif)
+```java
+RetroGameDialog retroGameDialog = new RetroGameDialog(this);
+retroGameDialog.enableYesButton(()->{
+    Toast.makeText(this,"Yes Slected",Toast.LENGTH_LONG).show();
+});
+retroGameDialog.enableNoButton(()->{
+    Toast.makeText(this,"No Slected",Toast.LENGTH_LONG).show();
+});
+retroGameDialog.enableCancelButton(()->{
+    Toast.makeText(this,"Cancel Slected",Toast.LENGTH_LONG).show();
+    retroGameDialog.dismiss();
+});
+retroGameDialog.setText("Just an example...\nHow Are You?\nEnjoy!");
+retroGameDialog.show();
+retroGameDialog.startAnimation(this,150,true);
 ```
 
 ## TODO:

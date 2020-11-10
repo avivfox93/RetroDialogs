@@ -47,7 +47,8 @@ public abstract class RetroDialog extends Dialog {
      */
     public void enableYesButton(DialogCallback callback){
         yes.setVisibility(View.VISIBLE);
-        yes.setOnClickListener((e)->callback.onClicked());
+        if(callback != null)
+            yes.setOnClickListener((e)->callback.onClicked());
     }
 
     /**
@@ -56,7 +57,8 @@ public abstract class RetroDialog extends Dialog {
      */
     public void enableNoButton(DialogCallback callback){
         no.setVisibility(View.VISIBLE);
-        no.setOnClickListener((e)->callback.onClicked());
+        if(callback != null)
+            no.setOnClickListener((e)->callback.onClicked());
     }
 
     /**
@@ -65,7 +67,8 @@ public abstract class RetroDialog extends Dialog {
      */
     public void enableCancelButton(DialogCallback callback){
         cancel.setVisibility(View.VISIBLE);
-        cancel.setOnClickListener((e)->callback.onClicked());
+        if(callback != null)
+            cancel.setOnClickListener((e)->callback.onClicked());
     }
 
     /**
