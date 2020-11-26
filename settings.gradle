@@ -1,0 +1,3 @@
+include ':Retro-Dialogs'
+include ':app'
+rootProject.name = "RetroDialogs"

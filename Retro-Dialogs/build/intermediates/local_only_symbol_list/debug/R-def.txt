@@ -1,0 +1,30 @@
+R_DEF: Internal format may change without notice
+local
+color retro_game_background
+color windows_98_background
+color windows_98_bar
+color windows_98_button
+drawable button_border
+drawable ic_retro_gaming_dialog1x
+drawable round_corners
+drawable windows98_exit
+drawable windows_error_icon
+drawable windows_info_icon
+drawable windows_warning_icon
+drawable wnidows_question_icon
+font arcade
+id dialog_bar
+id dialog_body_text
+id dialog_cancel_button
+id dialog_exit
+id dialog_icon
+id dialog_layout
+id dialog_no_button
+id dialog_yes_button
+id retro_gaming_background
+id retro_gaming_body_text
+id retro_gaming_cancel_btn
+id retro_gaming_no_btn
+id retro_gaming_yes_btn
+layout layout_dialog
+layout layout_retro_game

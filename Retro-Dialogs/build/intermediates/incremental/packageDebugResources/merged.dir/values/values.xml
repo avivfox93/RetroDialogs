@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="retro_game_background">#D5D5D5</color>
+    <color name="windows_98_background">#B4B4B4</color>
+    <color name="windows_98_bar">#0250F3</color>
+    <color name="windows_98_button">#D5D5D5</color>
+</resources>
