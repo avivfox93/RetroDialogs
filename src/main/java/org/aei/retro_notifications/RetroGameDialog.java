@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 
 import org.aei.retro_notifications.utils.TextAnimator;
 
+import java.io.PrintStream;
 import java.util.Objects;
 
 public class RetroGameDialog extends Dialog {
@@ -91,7 +92,7 @@ public class RetroGameDialog extends Dialog {
      * @param interval_ms time to wait between chars
      * @param showCursor show/hide the cursor while printing the chars
      */
-    public void startAnimation(Activity activity, int interval_ms, boolean showCursor){
+    public void startAnimation(@NonNull Activity activity, int interval_ms, boolean showCursor){
         bodyText.setText("");
         if(textAnimator != null)
             textAnimator.stopAnimation();
