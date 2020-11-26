@@ -14,7 +14,7 @@ allprojects {
 Then add the dependency
 ```gradle
 dependencies {
-        implementation 'com.github.avivfox93:RetroDialogs:Tag'
+        implementation 'com.github.avivfox93:RetroDialogs:1.2.0'
 }
 ```
 
